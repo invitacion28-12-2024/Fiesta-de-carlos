@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INVITACIÓN A LA FIESTA DE CARLOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <title>Invitación a la Fiesta</title>
     <style>
         body {
             background-color: black;
@@ -19,6 +23,7 @@
             height: 90vh;
         }
         .invitacion {
+            height: 100%;
             background-color: #00000081;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 500px;
@@ -26,15 +31,22 @@
             text-align: center;
         }
         h1 {
-            color:#ffffffbe;
+            font-family: Berkshire Swash, serif;
+            color:#ffffff;
             font-size: 36px;
             margin-bottom: 10px;
-            text-shadow: 5px, white;
-        }
+            text-shadow:       
+              0 0 5px rgba(0, 183, 255, 0.658), /* Primer halo cercano */
+        0 0 10px rgba(0, 38, 255, 0.596), 
+        0 0 20px rgba(153, 0, 255, 0.329), 
+        0 0 40px rgba(0, 255, 255, 0.295), /* Halo brillante más extendido */
+        0 0 80px rgba(145, 16, 145, 0.048); /* Halo externo */
+    }
+
         p {
-            font-size: 18px;
+            font-family: "Montserrat Alternates", serif;
+            font-size: 14px;
             color: #ffffff;
-            margin: 10px 0;
             text-align: center;
         }
         .detalles {
@@ -84,13 +96,14 @@
 <body>
     <div class="invitacion">
         <h1>¡Estás invitado!</h1>
-        <p>Nos encantaría contar con tu presencia para celebrar a Carlos en una fiesta muy especial. El mayor regalo es contar con su presencia en este día tan especial. Si además desea expresarnos su generosidad, le agradeceríamos que su detalle se traduzca en una contribución monetaria.</p>
+        <p style="text-align: center; font-size: 14px;">El mayor regalo es contar con su presencia en este día tan especial. Si además desea expresarnos su generosidad, le agradeceríamos que su detalle se traduzca en una contribución monetaria.</p>
         <div class="detalles">
-            <p><strong>Fecha:</strong> 28 de diciembre de 2024</p>
-            <p><strong>Hora:</strong> 5:00 PM</p>
-            <p><strong>Ubicación:</strong> Agustin Acosta Lagunes, Calle #17, Entre Cortes y Juan Soto</p>
+            <p><strong><img src="icons8-calendar-50.png" style="height: 13px;"> Fecha:</strong> 28 de diciembre de 2024</p>
+            <p><strong><img src="icons8-clock-128.png" style="height: 13px;"> Hora:</strong> 5:00 PM</p>
+            <p><strong><img src="icons8-delivery-pin-for-parcel-delivery-location-making-24.png" style="height: 13px;"> Ubicación:</strong> Agustin Acosta Lagunes, Calle #17, Entre Cortes y Juan Soto</p>
+            <iframe style="height: 18vh; width: 40vh;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.337230741257!2d-96.1618717128121!3d19.18046763575206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c34400a406c1c5%3A0xe32231a616f545a1!2sC.%2017%20226%2C%20Agust%C3%ADn%20Acosta%20Lagun%C3%A9s%2C%2091727%20Veracruz%2C%20Ver.!5e0!3m2!1ses-419!2smx!4v1734983880501!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <a href="https://forms.gle/fL8Yedvq7c89YkBY6" class="btn">¡Confirma tu asistencia!</a>
+        <a href="https://forms.gle/fL8Yedvq7c89YkBY6" class="btn" style="font-family: Berkshire Swash, serif;  font-size: 14px; ">¡Confirma tu asistencia!</a>
     </div>
 </body>
 </html>
